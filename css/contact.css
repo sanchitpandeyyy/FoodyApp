@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    /* --main-color:#2874f0; */
+    --main-color:orange;
+    --card-bg-color:navy;
+}
+
+header{
+   
+    background-color: var(--main-color);
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 58px;
+}
+
+.nav-name{
+    font-weight: 900;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 5px;
+}
+
+ nav ul{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  
+}
+
+
+ul li{
+    list-style: none;
+    padding:0px 22px;
+    
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.middle-nav-items li a:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+
+.right-nav-items li a{
+  border: 2px solid;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.right-nav-items li a:hover{
+    color: black;
+    font-weight: bolder;
+    border: 2px solid #FFFADD;
+    background-color: #FFFADD;
+}
+
+
+   body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.contact-info, .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}

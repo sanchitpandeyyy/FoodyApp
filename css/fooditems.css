@@ -1,0 +1,53 @@
+.items-btm{
+display: flex;
+justify-content: space-around;
+margin-top: 100px;
+margin-bottom: 30px;
+
+}
+
+
+#Ordernow{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid #F0DE36;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#Ordernow:hover{
+    background-color: #F0DE36;
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+.card-body{
+  display: flex;
+  justify-content: space-around;
+ 
+ align-items: center;
+ 
+}
+  
+
+.card-img-top{
+  height: 200px;
+}
+
+@media screen and (max-width: 768px){
+  .price{
+    width: 90px;
+  }
+  
+
+}
+
+
+.popup-title{
+  font-weight: 900; 
+  margin: auto;
+}
