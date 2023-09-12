@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
 *{
     font-family: sans-serif;
   }
@@ -9,6 +12,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      flex-direction: column;
   }
   .form-container {
       width: 320px;
@@ -18,14 +22,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      height: 50vh;
+      height: 56vh;
       color: rgba(243, 244, 246, 1);
     }
     
     .title {
       text-align: center;
       font-size: 1.5rem;
-      line-height: 2rem;
+   
       font-weight: 700;
     }
     
@@ -99,36 +103,10 @@
     
     .line {
       height: 1px;
-      flex: 1 1 0%;
+      flex: 1 1 ;
       background-color: rgba(55, 65, 81, 1);
     }
-    
-    .social-message .message {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      color: rgba(156, 163, 175, 1);
-    }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-    }
-    
-    .social-icons .icon {
-      border-radius: 0.125rem;
-      padding: 0.75rem;
-      border: none;
-      background-color: transparent;
-      margin-left: 8px;
-    }
-    
-    .social-icons .icon svg {
-      height: 1.25rem;
-      width: 1.25rem;
-      fill: #fff;
-    }
+
     
     .signup {
       text-align: center;
@@ -137,3 +115,29 @@
       color: rgba(156, 163, 175, 1);
     }
     
+
+.goback{
+  text-decoration: none;
+  color: white;
+  /* border: 2px solid rgba(17, 24, 39, 1); */
+  padding: 5px;
+  border-radius: 5px;
+text-align: center;
+  width: 80px;
+  font-family: 'Montserrat', sans-serif;
+ font-weight: 900;
+  background-color: rgba(17, 24, 39, 1);
+}
+
+.godiv{
+  display: flex;
+
+  margin-top: 5px;
+  height: 30px;
+}
+
+
+.goback:hover{
+  background-color: #f0de36;
+  
+}
