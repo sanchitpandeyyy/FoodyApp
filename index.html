@@ -40,7 +40,7 @@
         
             <ul class="right-nav-items">
                 
-                <li><a href="./signup.html">LOGIN</a></li>
+                <li><a href="" id="openPopup">LOGIN</a></li>
             </ul>
         
          </nav>
@@ -231,6 +231,7 @@
                   </div>
 
                 </div>
+                
         
             </div>
 
@@ -240,80 +241,51 @@
 
        
               
-              <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                <div class="offcanvas-header">
-                  <h5 class="popup-title" >ORDER NOW</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div>
-                    -MOMO
-                       <input type="text" style="width: 70px;" value="" min="0" max="100">
-                  </div>
-                </div> 
+            
+             <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            
+              <div class="offcanvas-header">
+            
+                <h5 class="popup-title" >ORDER NOW</h5>
+            
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            
               </div>
+            
+              <div class="offcanvas-body">
+            
+                <div class="wholepopup">
+            
+                  <label for="itemQuantity" style="padding: 15px;">MOMO</label>
+
+            
+                  <input id="itemQuantity" type="Number" style="width: 70px; text-align: center; margin-left: 15px;" value="0" min="0">
+
+                  <p style="padding: 15px;">Price: $<span id="totalPrice">0.00</span></p>
+
+
+            
+                </div>
+            
+            
+              </div> 
+            
+            </div>
     
         </main>
 
         <!--FOOTER starts-->
 
-    <footer class="flex-all-center">
-        <p class="text-center">Copyright &copy; 2023 | All rights reserved <br> Developed By <a href="" style="text-decoration: none ; color: white;">SPP</a></p> 
-    </footer>
+    
+        <footer class="flex-all-center">
+    
+          <p class="text-center">Copyright &copy; 2023 | All rights reserved <br> Developed By <a href="" style="text-decoration: none ; color: white;">SPP</a></p> 
+    
+        </footer>
 
     <!--FOOTER ends-->
-    <script>
 
-
-
-
-const url = 'https://mcdonald-s-products-api.p.rapidapi.com/us/currentMenu';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '68101e9869mshb0d87a2a3377af8p180fcfjsn8950c703f6bc',
-		'X-RapidAPI-Host': 'mcdonald-s-products-api.p.rapidapi.com'
-	}
-};
-
-const apifunct= async () => {
-
-
-try {
-	const response = await fetch(url, options);
-	const result = await response.json();
-	console.log(result);
-  await result.map(element => {
-    const markup = `  <div class="card" style="width: 18rem;">
-                    <img src="img/pizza.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">${element.name}</h5>
-                      
-                    </div>
-
-                    <div class="card-body">
-                      <p class="price">Price: Rs 500</p>
-
-                      <button class="btn btn-primary" type="button" id="Ordernow" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        Order Now
-                      </button>
-
-
-                    </div>
-                  </div> `;
-
-                  document.querySelector('.items-btm').insertAdjacentHTML('beforeend',markup);
-  });
-} catch (error) {
-	console.error(error);
-}
-}
-
-apifunct();
-
-
-
-    </script>
+    <script src="./js/script.js"></script>
  
 </body>
 </html>

@@ -162,3 +162,8 @@ footer{
     background-color: var( --main-color);
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.wholepopup{
+  border: #F0DE36 6px double;
+}
