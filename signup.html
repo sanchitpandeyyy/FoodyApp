@@ -5,40 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./css/signup.css">
-    <link rel="stylesheet" href="./css/fooditems.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="main-container">
-        <div class="form-container">
-            <p class="title">Login</p>
-            <form class="form">
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="">
-                    <div class="forgot">
-                        <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
-                    </div>
-                </div>
-                <button type="submit" class="sign">Sign in</button>
-            </form>
-            <div class="social-message">
-                <div class="line"></div>
-                <p class="message">Login with social accounts</p>
-                <div class="line"></div>
-            </div>
-            <p class="signup">Don't have an account?
-                <a rel="noopener noreferrer" href="#" class="">Sign up</a>
-            </p>
+<div class="container">
+    <form class="form_container">
+        <div class="title_container">
+          <p class="title">Login to your Account</p>
         </div>
+<<<<<<< HEAD
             <!-- <div class="godiv">
     <a class="goback" href="./index.html">Go Back</a>
    </div> -->
     </div>
+=======
+        <br>
+>>>>>>> 2f46cad8af217efa5558d3038163c9698652e300
 
-<script src="script.js"></script>
+        <div class="field email-field valid">
+
+          <div class="input-field">
+            <label class="input_label" for="email_field">Email</label>
+          <span class="form-icons">
+            <i class='bx bxs-user icon' ></i>
+          </span>
+          <input placeholder="name@mail.com" title="Input title" name="input-name" type="text" class="input_field email" id="email_field">
+
+          <span class="error error-email">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+          </div>
+
+        </div>
+
+
+        <div class="field password-field valid">
+          
+          <div class="input-field">
+            <label class="input_label" for="password_field">Password</label>
+          <span class="form-icons">
+            <i class='bx bxs-lock icon' ></i>
+          </span>
+          <input placeholder="Password" title="Input title" name="input-name" type="password" class="input_field password" id="password_field">
+          
+          <span class="error error-password">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Password does not match</p>
+          </span>
+          </div>
+
+        </div>
+        
+          <div class="">
+            <input type="submit" name="" id="" class="sign-in_btn" value="Sign In">
+          </div>
+        
+        <div class="separator">
+          <hr class="line">
+          <span>Or</span>
+          <hr class="line">
+        </div>
+        <button title="Sign In" type="submit" class="sign-in_ggl">
+                <i class='bx bxl-google big'></i>
+          <span>Sign In with Google</span>
+        </button>
+        <button title="Sign In" type="submit" class="sign-in_apl">
+            <i class='bx bxl-apple big'></i>
+          <span>Sign In with Apple</span>
+        </button>
+        <p class="note">Terms of use &amp; Conditions</p>
+    </form>
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>
